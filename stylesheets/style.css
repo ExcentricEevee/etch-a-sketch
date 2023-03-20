@@ -1,0 +1,11 @@
+.container {
+    height: 220px;
+    width: 220px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.etched {
+    background-color: black;
+}
