@@ -1,6 +1,13 @@
-.container {
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
     height: 220px;
     width: 220px;
+    /*margin: auto;*/
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
