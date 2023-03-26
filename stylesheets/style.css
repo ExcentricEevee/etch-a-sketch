@@ -5,12 +5,10 @@
 }
 
 .grid-container {
-    height: 220px;
-    width: 220px;
-    /*margin: auto;*/
+    height: auto;
+    width: auto;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    /* column and row sizes established in script.js */
 }
 
 .etched {

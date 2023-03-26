@@ -22,6 +22,9 @@ function makeGrid(size) {
 
         div.appendChild(box);
     }
+    
+    /* .grid-container has its own styling in style.css, but we need the variable to make the size work */
+    div.setAttribute('style', `grid-template-columns: repeat(${size}, 1fr); grid-template-rows: repeat(${size}, 1fr);`);
 }
 
 function clearGrid() {
