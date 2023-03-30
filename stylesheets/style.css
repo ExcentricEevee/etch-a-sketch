@@ -5,8 +5,8 @@
 }
 
 .grid-container {
-    height: auto;
-    width: auto;
+    height: 720px;
+    width: 720px;
     display: grid;
     /* column and row sizes established in script.js */
 }
