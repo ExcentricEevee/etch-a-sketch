@@ -8,6 +8,7 @@
     height: 720px;
     width: 720px;
     display: grid;
+    border: 1px solid gray;
     /* column and row sizes established in script.js */
 }
 

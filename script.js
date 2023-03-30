@@ -6,8 +6,14 @@ makeGrid(16);
 
 btn.addEventListener('click', () => {
     let gridSize = Number(prompt('What do you want the grid size to be?'));
-    clearGrid();
-    makeGrid(gridSize);
+    
+    /* Anything bigger than 100 could cause slowdown or crashes, so protect the user */
+    if (gridSize > 100) {
+        alert('The max is 100, please pick a smaller number.');
+    } else {
+        clearGrid();
+        makeGrid(gridSize);
+    }
 });
 
 function makeGrid(size) {
