@@ -15,3 +15,7 @@ for(let i = 0; i < GRID_SIZE; i++) {
 const containerSize = squareSize * LENGTH;
 container.setAttribute('style', `width: ${containerSize}px;
     height: ${containerSize}px;`);
+
+container.addEventListener('mouseover', (event) => {
+    event.target.setAttribute('style', 'background-color: grey;');
+});
