@@ -10,14 +10,18 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
 }
 
-.square {
-    padding: 0px;
-    margin: 0;
-    width: 10px;
-    height: 10px;
-    border: 1px solid grey;
+.row {
+    display: flex;
+}
+
+.container .square {
+    border: 1px solid #a3a3a3;
+}
+
+.hovered {
+    background-color: #333;
 }
