@@ -29,8 +29,13 @@ function clearGrid() {
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
-    //const size = prompt('What size grid? (Max 100)', '16');
-    clearGrid();
+    const size = prompt('What size grid? (Max 100)', '16');
+    if (size > 100) {
+        alert('The size cannot be greater than 100');
+    } else {
+        clearGrid();
+        createGrid(size);
+    }
 });
 
 createGrid(16);
